@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
+import '../index.css'
 
 const Navbar = () => {
   return (
