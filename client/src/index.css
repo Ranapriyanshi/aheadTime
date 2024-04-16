@@ -1,0 +1,74 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+/* Universal Styling */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Navbar Component Styling */
+.navbar {
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #fff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar_right{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+.navbar_left-logo img{
+  width: 4rem;
+}
+
+.download_btn{
+  all: unset;
+  padding: 0.9rem 2.5rem;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+
+/* Main Section Styling */
+.sec-background{
+  margin: 1rem 5rem;
+  border-radius:2rem;
+  background-color: #eeebfe;
+  display: flex;
+  /* justify-content: center; */
+}
+
+
+.mainSec_left{
+  padding: 2rem;
+  width: 50%;
+}
+
+.mainSec_left h1{
+  font-size: 5.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+}
+
+
+
+
