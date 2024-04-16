@@ -14,6 +14,7 @@
   --background-primary: #fff;
   --backgroung-secondary: #eeebfe;
   --background-tertiary: #e2dbfd;
+  --background-quaternary: #fef7f1;
   --tile-color1: #d8f2ff;
   --tile-color2: #ffefd5;
 
@@ -312,6 +313,108 @@ body {
   transform: rotate(-8deg);
 }
 
-.trial{
-  height: 100vh;
+/* App Inro Section Styling */
+.appIntroSec{
+  margin: 6rem 6rem;
+  display: flex;
+  background-color: var(--background-quaternary);
+  border-radius: 2rem;
+  position: relative;
+  flex-direction: column;
+}
+.elementSec{
+  width: 100%;
+  padding: 2rem;
+  display: flex;align-items: center;
+  justify-content: right;
+  position: relative;
+}
+
+#flower1{
+  position: absolute;
+  width: 3%;
+  top: -45%;
+  right: 5%;
+}
+
+#leaf3{
+  position: absolute;
+  width: 0.5%;
+  top: 75%;
+  right: 10%;
+  transform: rotate(135deg);
+} 
+
+.intro{
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.intro_sec{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.intro_left{
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.intro_left_div1{
+  position: absolute;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  
+}
+.intro_left_div2{
+  background-color: var(--background-primary);
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.intro_left_div1 img{
+  position: absolute;
+  width: 15vh;
+}
+#crownDiv{
+  position: absolute;
+  width: 15vh;
+  top: -10%;
+  left: 26%;
+
+}
+#lightElipse3{
+  position: absolute;
+  width: 15%;
+  top: 10%;
+  left: 10%;
+  opacity: 0.4;
+  filter: blur(5px);
+}
+.intro_right{
+  width: 50%;
+  padding: 2rem 6rem;
+  height: 100%;
+  align-items: center;
+  font-size: 1.5rem;
 }

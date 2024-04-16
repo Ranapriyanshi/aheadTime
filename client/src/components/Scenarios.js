@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useAnimation,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import "../index.css";
 import ghost1 from "../assets/ghost3.png";
 
@@ -84,7 +90,11 @@ const Scenarios = () => {
           src={ghost1}
           variants={{
             hidden: { rotate: -75, x: 1000 },
-            visible: { rotate: -15, x: 0 , transition: { duration: 5 , type: "spring"}},
+            visible: {
+              rotate: -15,
+              x: 0,
+              transition: { duration: 5, type: "spring" },
+            },
           }}
           animate={controller}
           initial="hidden"
@@ -100,7 +110,6 @@ const Scenarios = () => {
           </motion.div>
         ))}
       </motion.div>
-      <motion.div className="trial"></motion.div>
     </motion.div>
   );
 };

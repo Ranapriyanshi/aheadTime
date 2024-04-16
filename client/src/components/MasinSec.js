@@ -30,7 +30,12 @@ const MainSec = () => {
 
   return (
     <motion.div className="sec-background">
-      <motion.img src={leaf} className="random-back" id="leaf1" animate={{rotate:[0,90,0, -90]}}></motion.img>
+      <motion.img
+        src={leaf}
+        className="random-back"
+        id="leaf1"
+        animate={{ rotate: [0, 90, 0, -90] }}
+      ></motion.img>
       <motion.img
         src={evileyeelipse}
         className="random-back"
@@ -46,13 +51,13 @@ const MainSec = () => {
         src={darkelipse}
         className="random-back"
         id="lightElipse2"
-        animate={{ transition: { duration: 2 } , scale: [1, 1.1, 1]}}
+        animate={{ transition: { duration: 2 }, scale: [1, 1.1, 1] }}
       ></motion.img>
       <motion.img
         src={lightElipse}
         className="random-back"
         id="darkElipse2"
-        animate={{ transition: { duration: 2 } , scale: [1, 1.1, 1]}}
+        animate={{ transition: { duration: 2 }, scale: [1, 1.1, 1] }}
       ></motion.img>
       <motion.div className="mainSec_left">
         <motion.p>Ahead app</motion.p>
