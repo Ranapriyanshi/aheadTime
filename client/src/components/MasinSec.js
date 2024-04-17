@@ -15,9 +15,6 @@ import leaf from "../assets/leaf.png";
 import darkelipse from "../assets/darkelipse.png";
 import evileyeelipse from "../assets/evileyeelipse.png";
 import lightElipse from "../assets/lightElipse.png";
-// import mghost2 from "../assets/mghost2.png";
-// import mghost3 from "../assets/mghost3.png";
-// import mghost5 from "../assets/mghost5.png";
 
 const MainSec = () => {
   const stars = () => {
