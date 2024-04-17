@@ -85,7 +85,20 @@ const Scenarios = () => {
   return (
     <motion.div className="scenarioSec">
       <motion.div className="title">
-        <motion.h1>Does this sound familier...</motion.h1>
+        <motion.h1
+          variants={{
+            hidden: { rotate: 0, x: -100 },
+            visible: {
+              x: 0,
+              transition: { duration: 2, type: "spring" },
+            },
+          }}
+          animate={controller}
+          initial="hidden"
+          ref={ref}
+        >
+          Does this sound familier...
+        </motion.h1>
         <motion.img
           src={ghost1}
           variants={{
