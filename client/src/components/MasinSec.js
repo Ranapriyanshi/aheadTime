@@ -20,7 +20,14 @@ const MainSec = () => {
   const stars = () => {
     let arr = [];
     for (let i = 0; i < 5; i++) {
-      arr.push(<motion.img src={star}></motion.img>);
+      arr.push(
+        <motion.img
+          src={star}
+          initial={{ rotate: 90 }}
+          animate={{ rotate: 0 }}
+          transition={{ type: "spring", duration: 1.5 }}
+        ></motion.img>
+      );
     }
     return arr;
   };
@@ -63,9 +70,14 @@ const MainSec = () => {
           by mastering emotions
         </motion.h1>
         <motion.div className="mainSec_left-icons">
-          <motion.img src={appStore}></motion.img>
+          <motion.img
+            src={appStore}
+            initial={{ rotate: 180 }}
+            animate={{ rotate: 0 }}
+            transition={{ type: "spring", duration: 1 }}
+          ></motion.img>
           <motion.div>
-            {stars()}
+            <motion.div>{stars()}</motion.div>
             <motion.p>100+ AppStore Reviews</motion.p>
           </motion.div>
         </motion.div>
@@ -111,7 +123,13 @@ const MainSec = () => {
           <motion.img src={mockup}></motion.img>
         </motion.div>
         <motion.div className="circles" id="circle-img">
-          <motion.img src={mockup2} id="popup"></motion.img>
+          <motion.img
+            src={mockup2}
+            id="popup"
+            initial={{ scale: 0.4 }}
+            animate={{ scale: 1, x: 0 }}
+            transition={{ type: "spring", duration: 1.2 }}
+          ></motion.img>
         </motion.div>
       </motion.div>
     </motion.div>

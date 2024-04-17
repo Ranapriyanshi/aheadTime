@@ -10,8 +10,22 @@ const OpenSec = () => {
       controller.start("visible");
     }
   }, [view, controller]);
+  
   return (
-    <motion.div className="openSec">
+    <motion.div
+      className="openSec"
+      variants={{
+        hidden: { rotate: 0, z: -300 , scale: 0.5 },
+        visible: {
+          z: 0,
+          scale: 0.9,
+          transition: { duration: 2, type: "spring" },
+        },
+      }}
+      animate={controller}
+      initial="hidden"
+      ref={ref}
+    >
       <motion.p>We take privacy seriously</motion.p>
       <motion.h1>Before you get Started</motion.h1>
       <motion.p>
